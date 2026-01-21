@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BLACK KNIGHT DRONE TEAM</title>
+<meta name="description" content="BLACK KNIGHT DRONE TEAM — Technical skill development. No experience required." />
+
+<style>
+:root{
+  --bg:#040607;
+  --panel:#060a0b;
+  --line:rgba(255,50,50,.22);
+  --text:#ffd6d6;
+  --muted:rgba(255,200,200,.65);
+  --red:#ff1744;
+  --red2:#ff335c;
+  --max:980px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+
+body{
+  margin:0;
+  font:15px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  color:var(--text);
+  background:var(--bg);
+}
+
+.wrap{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px 16px;
+}
+
+.terminal{
+  width:100%;
+  max-width:var(--max);
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 12px;
+  border-bottom:1px solid var(--line);
+}
+
+.dots{display:flex; gap:6px}
+.dot{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:rgba(255,255,255,.15);
+}
+
+.title{
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.content{padding:16px}
+
+.line{
+  display:flex;
+  gap:8px;
+  margin:8px 0;
+  flex-wrap:wrap;
+}
+
+.caret{color:var(--red2)}
+.cmd{color:var(--red)}
+
+.btn{
+  position:relative;
+  padding:14px 22px 14px 44px;
+  border-radius:6px;
+  border:1px solid var(--red2);
+  color:#ffe6ea;
+  text-decoration:none;
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-size:15px; /* MATCH top text size */
+}
+
+.btn::before{
+  content:">>";
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-50%);
+  color:rgba(255,200,200,.7);
+}
+
+.btn:hover{
+  background:rgba(255,50,80,.12);
+}
+
+.video-frame{
+  margin-top:14px;
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:#000;
+}
+
+iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+footer{
+  padding:10px 16px;
+  border-top:1px solid var(--line);
+  font-size:11px;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+</style>
+</head>
+
+<body>
+<main class="wrap">
+<section class="terminal">
+
+  <div class="topbar">
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="title">westpointfpv.com</div>
+  </div>
+
+  <div class="content">
+    <div class="line"><span class="caret">&gt;</span><span class="cmd">BLACK KNIGHT DRONE TEAM.</span></div>
+    <div class="line"><span class="caret">&gt;</span><span class="cmd">REAL PILOTS. REAL SKILL. REAL CONTROL.</span></div>
+    <div class="line"><span class="caret">&gt;</span><span class="cmd">NO EXPERIENCE REQUIRED.</span></div>
+
+    <div class="line">
+      <a class="btn" href="https://example.com/signup" target="_blank">REQUEST TO JOIN</a>
+    </div>
+
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1"
+        title="BKDT Training Video"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <footer>
+    <span>POC://sidharth.hegde@westpoint.edu</span>
+    <span>UNITED STATES MILITARY ACADEMY</span>
+  </footer>
+
+</section>
+</main>
+</body>
+</html>
